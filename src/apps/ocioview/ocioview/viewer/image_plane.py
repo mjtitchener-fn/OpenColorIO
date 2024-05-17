@@ -352,7 +352,7 @@ class ImagePlane(QtOpenGLWidgets.QOpenGLWidget):
                 color_space_name,
                 self._ocio_proc_context.transform_item_type,
                 self._ocio_proc_context.transform_item_name,
-                self._ocio_proc_context.direction,
+                self._ocio_proc_context.transform_direction,
             )
         else:
             proc_context = ProcessorContext(color_space_name, None, None)
